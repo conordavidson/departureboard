@@ -37,8 +37,8 @@ th{
   font-weight: 100;
 }
 
-.track{
-  text-align: center;
+#departures{
+  text-align: left;
 }
 
 .status{
