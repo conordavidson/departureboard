@@ -1,0 +1,97 @@
+body{
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+main{
+  box-sizing: border-box;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#departure-board{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 40px 40px 40px;
+  margin: 40px 0;
+  background-color: #292929;
+  color: #fff97f;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead{
+  font-family: sans-serif;
+  color: white;
+}
+
+th{
+  padding-bottom: 30px;
+  font-weight: 100;
+}
+
+.track{
+  text-align: center;
+}
+
+.status{
+  color: #bdf226;
+}
+
+#controls{
+  margin-bottom: 30px;
+}
+
+#controls td{
+  width: 33.3333%;
+  text-align: center;
+}
+
+#controls td:first-child{
+  text-align: left;
+}
+
+#controls td:last-child{
+  text-align: right;
+}
+
+.heading{
+  font-family: monospace;
+  color: #fff97f;
+}
+
+#station-toggle{
+  font-size: 0;
+}
+
+#station-toggle div{
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all 0.125s ease-in-out;
+  box-shadow: inset 0 0 0 rgba(0,0,0,0.25),
+              inset 0 0 0 rgba(0,0,0,0.50),
+              0 1px 3px rgba(0,0,0,0.25),
+              0 1px 2px rgba(0,0,0,0.50);
+}
+
+#station-toggle div:hover, #station-toggle div:active, #station-toggle div.selected{
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.25),
+              inset 0 1px 2px rgba(0,0,0,0.50),
+              0 0 0 rgba(0,0,0,0.25),
+              0 0 0 rgba(0,0,0,0.50);
+}
+
+#station-toggle div.selected{
+  color: #26b6f2;
+}

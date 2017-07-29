@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MBTA | Departure Board</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="departure-board">
+        <table id="controls">
+          <thead>
+            <tr>
+              <td class="heading">
+                <div id="day" class="dynamic"></div>
+                <div id="date" class="dynamic"></div>
+              </td>
+              <td id='station-toggle'>
+                <div id="north" class="selected">North Station</div>
+                <div id="south">South Station</div>
+              </td>
+              <td class="heading">
+                <div>Current Time</div>
+                <div id="time" class="dynamic"></div>
+              </td>
+            </tr>
+          </thead>
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Destination</th>
+              <th>Train#</th>
+              <th>Track#</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="schedule">
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>

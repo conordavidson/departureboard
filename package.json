@@ -1,0 +1,16 @@
+{
+  "name": "departureboard",
+  "version": "1.0.0",
+  "description": "Display MBTA Train Departures",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Conor Davidson",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^1.1.7",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
+}
