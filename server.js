@@ -3,8 +3,10 @@ var http = require('http');
 var request = require('request');
 var csv = require('csvtojson');
 
+var port = process.env.PORT || 3000;
+
 var app = express();
-var server = app.listen(3000)
+var server = app.listen(port)
 app.use(express.static('app'));
 
 
